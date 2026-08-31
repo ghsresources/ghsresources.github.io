@@ -69,9 +69,10 @@ html, body {
 td, th {
     border-collapse: separate;
     font-family: 'OCR-A', monospace;
-    font-size: 16px;
+    font-size: 11px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .diagrams {
