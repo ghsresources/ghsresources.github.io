@@ -7,6 +7,14 @@
  font-display: swap;
 }
 
+@font-face {
+ font-family: 'OCR-A';
+ src: url('OCRA.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}
+
 h1 {
     font-family: 'Wevli Regular', -apple-system, 'Segoe UI', Arial, system-ui, sans-serif;
     font-weight: lighter;
@@ -60,7 +68,7 @@ html, body {
 
 td, th {
     border-collapse: separate;
-    font-family: monospace;
+    font-family: 'OCR-A', monospace;
     font-size: 16px;
     padding-left: 20px;
     padding-right: 20px;
