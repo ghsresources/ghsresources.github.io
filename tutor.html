@@ -16,12 +16,37 @@
     </div>
     <p>Do you need help with math at Glendora High School? Contact me below to schedule a session for tutoring.</p>
     <p>The fee for tutoring is $10 per hour, paid through cash or Zelle (TBD).</p>
-    <center><a href="mailto:ghsmathtutoring@gmail.com"><button>Email me</button></a></center>
+    <p>Select your subject below and use one of the two methods listed to contact me.</p>
+    <label for="subjects"></label>
+    <center><select name="subjects" id="subjects">
+      <option value="" selected disabled hidden>-- Please choose an option --</option>
+      <option value="Integrated I">Integrated I</option>
+      <option value="Integrated II">Integrated II</option>
+      <option value="Advanced Integrated II">Advanced Integrated II</option>
+      <option value="Integrated III">Integrated III</option>
+      <option value="Advanced Integrated III">Advanced Integrated III</option>
+      <option value="PreCalculus">PreCalculus</option>
+      <option value="AP PreCalculus">AP PreCalculus</option>
+      <option value="AP Calculus AB">AP Calculus AB</option>
+      <option value="AP Calculus BC">AP Calculus BC</option>
+    </select></center><br>
+    <center><a href="mailto:ghsmathtutoring@gmail.com" id="emailme"><button id="emailBtn">Email me</button></a></center>
     <center><a href="tel:6266039269"><button>Call me at (626)-603-9269</button></a></center>
     <br><br><br><br><br><br><br><br><br><br>
     <div class="cInfo">
       <br><h3>Copyright &copy; 2026 Luke Jiang. All Rights Reserved.</h3>
       <h3>This website is not affiliated with or endorsed by Glendora High School.</h3><br>
     </div>
+    <script>
+      const btn = document.getElementById("emailBtn");
+      const dropdown = document.getElementById("subjects");
+      var selected;
+      dropdown.addEventListener("change", (event) => {
+        selected = event.target.value;
+         btn.addEventListener("mouseenter", () => {
+          document.getElementById("emailme").innerHTML = "<center><a href=\"mailto:ghsmathtutoring@gmail.com?subject=" + selected + " Tutoring Request\"><button id=\"emailBtn\">Email me</button></a></center>";
+        });
+      });
+    </script>
   </body>
 </html>
