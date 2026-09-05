@@ -59,6 +59,12 @@ pre {
     color: white;
 }
 
+.center {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
 html, body {
     margin: 0px;
     padding: 0px;
