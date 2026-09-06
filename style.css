@@ -156,4 +156,6 @@ input {
  padding-bottom: 8px;
  font-family: 'OCR-A', 'Wevli Regular', 'Segoe UI', system-ui;
  border: 4px solid black;
+ -webkit-appearance: none;
+ appearance: none;
 }
