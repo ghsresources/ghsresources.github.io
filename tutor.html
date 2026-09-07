@@ -78,10 +78,18 @@
           date = dateInput.value;
           time = timeInput.value;
           loc = locInput.value;
-          body = `Hi!
-          I would like to schedule a tutoring session for ${name} at ${loc}.
-          The best time that would work for me is on ${date} ${time}.`;
-          window.open("mailto:ghsmathtutoring@gmail.com?subject=" + selected + " Tutoring Request&body=" + body + "", "_blank");
+          if (name == "") { alert("Are you kidding me??? You don't have a name?"); }
+          else if (date == "") { alert("Please choose a date that works best for you."); }
+          else if (time == "") { alert("Please choose a time that works best for you."); }
+          else if (loc == "") { alert("Please choose a location that works best for you. If you want to choose another location than what is specified in the options, please specify your desired location before sending the email request."); }
+          else {
+            body = `Hi!
+            I would like to schedule a tutoring session at ${loc}.
+            The best time that would work for me is on ${date} ${time}.\n
+            Thank you,\n
+            ${name}`;
+            window.open("mailto:ghsmathtutoring@gmail.com?subject=" + selected + " Tutoring Request&body=" + body + "", "_blank");
+          }
         });
       });
     </script>
