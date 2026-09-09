@@ -19,6 +19,7 @@
     <p>The fee for tutoring is $10 per hour, paid through cash or Zelle.</p>
     <p>You can arrange a session by completing the email request form below and emailing me or calling me.</p>
     <label for="subjects"></label>
+    <p>Please select a level of math.</p>
     <div class="center">
       <select name="subjects" id="subjects">
         <option value="" selected disabled hidden>-- Please choose an option --</option>
@@ -55,6 +56,15 @@
         <option value="GHS Room 320">GHS Room 320</option>
         <option value="another location than what is specified in the given options">Other (please specify in email)</option>
       </select>
+    </div>
+    <p>How would you like to pay for the tutoring session?</p>
+    <div class="center">
+      <label for="pay">Payment method: </label>
+      <select name="pay" id="pay">
+        <option value="" selected disabled hidden>-- Please choose an option --</option>
+        <option value="cash">Cash</option>
+        <option value="Zelle">Zelle</option>
+      </select>
     </div><br>
     <div class="center"><button id="emailBtn">Submit Email Request</button></a>
     <a href="tel:6266039269"><button>Call me at (626)-603-9269</button></a></div>
@@ -70,28 +80,31 @@
       const dateInput = document.getElementById("date");
       const timeInput = document.getElementById("time");
       const locInput = document.getElementById("loc");
-      var selected, name, date, time, loc, body;
-      dropdown.addEventListener("change", (event) => {
-         selected = event.target.value;
+      const payInput = document.getElementById("pay");
+      var selected, name, date, time, loc, body, payMethod;
          btn.addEventListener("click", () => {
+          selected = dropdown.value;
           name = textInput.value;
           date = dateInput.value;
           time = timeInput.value;
           loc = locInput.value;
-          if (name == "") { alert("Are you kidding me??? You don't have a name?"); }
+          payMethod = payInput.value;
+          if (selected == "") { alert("Please choose a level of math. Unfortunately, I can only tutor the levels listed in the given options."); }
+          else if (name == "") { alert("Please provide a name."); }
           else if (date == "") { alert("Please choose a date that works best for you."); }
           else if (time == "") { alert("Please choose a time that works best for you."); }
           else if (loc == "") { alert("Please choose a location that works best for you. If you want to choose another location than what is specified in the options, please specify your desired location before sending the email request."); }
+          else if (payMethod == "") { alert("Please choose a payment method!"); }  
           else {
-            body = `Hi!
-            I would like to schedule a tutoring session at ${loc}.
-            The best time that would work for me is on ${date} ${time}.\n
-            Thank you,\n
+            body = `Hi!%0A
+            I would like to schedule a tutoring session at ${loc}.%0A
+            The best time that would work for me is on ${date} ${time}.%0A
+            I will be paying you through ${payMethod}.%0A
+            Thank you,%0A
             ${name}`;
             window.open("mailto:ghsmathtutoring@gmail.com?subject=" + selected + " Tutoring Request&body=" + body + "", "_blank");
           }
         });
-      });
     </script>
   </body>
 </html>
