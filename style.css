@@ -1,7 +1,7 @@
 
 @font-face {
  font-family: 'Wevli Regular';
- src: url('wevli_regular.woff') format('woff');
+ src: url('fonts/wevli_regular.woff') format('woff');
  font-weight: normal;
  font-style: normal;
  font-display: swap;
@@ -9,10 +9,26 @@
 
 @font-face {
  font-family: 'OCR-A';
- src: url('OCRA.ttf') format('truetype');
+ src: url('fonts/OCRA.ttf') format('truetype');
  font-weight: normal;
  font-style: normal;
  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto_Legacy_Med';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto_Legacy_Bold';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 h1 {
@@ -24,11 +40,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'Wevli Regular', -apple-system, 'Segoe UI', Arial, system-ui, sans-serif;
+    font-family: 'Roboto_Legacy_Bold', -apple-system, 'Segoe UI', Arial, system-ui, sans-serif;
     font-weight: normal;
     font-size: 36px;
     margin-left: 50px;
-    color: #a31f34;
+    color: orangered;
 }
 
 h3 {
@@ -41,7 +57,7 @@ h3 {
 }
 
 p, ul, u, ol, label {
-    font-family: Verdana, system-ui, sans-serif;
+    font-family: 'Roboto_Legacy_Med', system-ui, sans-serif;
     font-size: 16px;
     margin-left: 120px;
     margin-right: 120px;
