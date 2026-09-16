@@ -33,19 +33,7 @@
 		    <script type="text/javascript">
       var gameInstance;
       window.onload = function () {
-        let  bttn = document.createElement( "button" );
-        bttn.appendChild(document.createTextNode( "CLICK TO PLAY NOW" ));
-        bttn.setAttribute('id', 'run_game');
-        bttn.style.display = 'none';
-        bttn.style.position = 'absolute';
-        document.body.appendChild(bttn);
-        bttn.style.display = 'block';
-        bttn.style.left = ((document.body.clientWidth - bttn.offsetWidth)/2) + 'px';
-        bttn.style.top = ((document.body.clientHeight - bttn.offsetHeight)/2) + 'px';
-        bttn.onclick = function () {
           gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/cookieclickerunblocked/slp@ddcf1d475e4c9f0c58a6b0cf0cba75b25896b657/slope_new.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
-          this.remove();
-        }
       }
     </script>
     <div class="webgl-content">
