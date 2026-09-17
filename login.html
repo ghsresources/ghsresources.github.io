@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Secret Website</title>
+        <title>Administrator Login</title>
         <link rel="stylesheet" href="style.css">
         <style>
             .pTitle {
-                background-color: navy;
+                background-color: magenta;
             }
             h1 {
                 text-align: left;
                 font-family: 'Roboto_Legacy_Bold', system-ui;
                 font-size: 36px;
             }
+
+            h2 {
+                font-size: 24px;
+                color: red;
+            }
+
+            dialog {
+                border-radius: 20px;
+            }
         </style>
     </head>
     <body>
         <div class="pTitle">
-            <br><h1>Secret Webpage</h1><br>
+            <h1>Administrator Login</h1>
         </div>
 
-        <p>Please enter the secret password.</p>
+        <p>Please enter the administrator password.</p>
         <label for="pwd">Password: </label>
         <input type="password" id="pwd" name="pwd"><br><br>
         <div class="center">
-            <button id="submit">Submit</button>
+            <button id="submit">Login</button>
         </div>
 
         <dialog id="denied">

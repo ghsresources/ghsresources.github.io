@@ -73,12 +73,16 @@ pre {
 .pTitle, .cInfo {
     background-color: #a31f34;
     color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .center {
  display: flex;
  justify-content: center;
  align-items: center;
+ padding-top: 30px;
+ padding-bottom: 30px;
 }
 
 html, body {
