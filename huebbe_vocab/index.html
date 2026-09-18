@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="../style.css">
         <style>
             .pTitle, .cInfo, button {
-                background-color: orangered;
+                background-color: darkorange;
             }
 
             button:hover {
@@ -199,44 +199,26 @@
             document.getElementById(str).style = "color: lightgreen;";
         }
 
-        function incorrect(str) {
-            document.getElementById(str).textContent = "Incorrect: ";
-            document.getElementById(str).style = "color: mediumvioletred;";
+        function incorrect(str, correct) {
+            document.getElementById(str).textContent = `Incorrect (Correct = ${correct}): `;
+            document.getElementById(str).style = "color: red;";
         }
 
         button.addEventListener("click", function() {
             let numCorrect = 0;
             btnClicked++;
-            if (document.getElementById("q1").valueAsNumber == 8) { numCorrect++; correct("t1"); } else { incorrect("t1"); }
-            if (document.getElementById("q2").valueAsNumber == 1) { numCorrect++; correct("t2"); } else { incorrect("t2"); }
-            if (document.getElementById("q3").valueAsNumber == 6) { numCorrect++; correct("t3"); } else { incorrect("t3"); }
-            if (document.getElementById("q4").valueAsNumber == 3) { numCorrect++; correct("t4"); } else { incorrect("t4"); }
-            if (document.getElementById("q5").valueAsNumber == 7) { numCorrect++; correct("t5"); } else { incorrect("t5"); }
-            if (document.getElementById("q6").valueAsNumber == 2) { numCorrect++; correct("t6"); } else { incorrect("t6"); }
-            if (document.getElementById("q7").valueAsNumber == 10) { numCorrect++; correct("t7"); } else { incorrect("t7"); }
-            if (document.getElementById("q8").valueAsNumber == 4) { numCorrect++; correct("t8"); } else { incorrect("t8"); }
-            if (document.getElementById("q9").valueAsNumber == 5) { numCorrect++; correct("t9"); } else { incorrect("t9"); }
-            if (document.getElementById("q10").valueAsNumber == 9) { numCorrect++; correct("t10"); } else { incorrect("t10"); }
-            if (document.getElementById("q11").valueAsNumber == 11) { numCorrect++; correct("t11"); } else { incorrect("t11"); }
-            if (document.getElementById("q12").valueAsNumber == 17) { numCorrect++; correct("t12"); } else { incorrect("t12"); }
-            if (document.getElementById("q13").valueAsNumber == 20) { numCorrect++; correct("t13"); } else { incorrect("t13"); }
-            if (document.getElementById("q14").valueAsNumber == 15) { numCorrect++; correct("t14"); } else { incorrect("t14"); }
-            if (document.getElementById("q15").valueAsNumber == 19) { numCorrect++; correct("t15"); } else { incorrect("t15"); }
-            if (document.getElementById("q16").valueAsNumber == 13) { numCorrect++; correct("t16"); } else { incorrect("t16"); }
-            if (document.getElementById("q17").valueAsNumber == 12) { numCorrect++; correct("t17"); } else { incorrect("t17"); }
-            if (document.getElementById("q18").valueAsNumber == 14) { numCorrect++; correct("t18"); } else { incorrect("t18"); }
-            if (document.getElementById("q19").valueAsNumber == 18) { numCorrect++; correct("t19"); } else { incorrect("t19"); }
-            if (document.getElementById("q20").valueAsNumber == 16) { numCorrect++; correct("t20"); } else { incorrect("t20"); }
-            if (document.getElementById("q21").valueAsNumber == 25) { numCorrect++; correct("t21"); } else { incorrect("t21"); }
-            if (document.getElementById("q22").valueAsNumber == 30) { numCorrect++; correct("t22"); } else { incorrect("t22"); }
-            if (document.getElementById("q23").valueAsNumber == 27) { numCorrect++; correct("t23"); } else { incorrect("t23"); }
-            if (document.getElementById("q24").valueAsNumber == 24) { numCorrect++; correct("t24"); } else { incorrect("t24"); }
-            if (document.getElementById("q25").valueAsNumber == 28) { numCorrect++; correct("t25"); } else { incorrect("t25"); }
-            if (document.getElementById("q26").valueAsNumber == 26) { numCorrect++; correct("t26"); } else { incorrect("t26"); }
-            if (document.getElementById("q27").valueAsNumber == 23) { numCorrect++; correct("t27"); } else { incorrect("t27"); }
-            if (document.getElementById("q28").valueAsNumber == 21) { numCorrect++; correct("t28"); } else { incorrect("t28"); }
-            if (document.getElementById("q29").valueAsNumber == 29) { numCorrect++; correct("t29"); } else { incorrect("t29"); }
-            if (document.getElementById("q30").valueAsNumber == 22) { numCorrect++; correct("t30"); } else { incorrect("t30"); }
+
+
+            let correctAnswers = [8, 1, 6, 3, 7, 2, 10, 4, 5, 9, 11, 17, 20, 15, 19, 13, 12, 14, 18, 16, 25, 30, 27, 24, 
+                28, 26, 23, 21, 29, 22];
+            correctAnswers.forEach((answer, index) => {
+                if (document.getElementById(`q${index+1}`).valueAsNumber == answer) {
+                    numCorrect++;
+                    correct(`t${index+1}`);
+                } else {
+                    incorrect(`t${index+1}`,`${answer}`);
+                }
+            });
 
             document.getElementById("results").textContent = "Questions Correct: " + numCorrect + " / " + numPossible + " (" + Math.round(numCorrect / numPossible * 100) + "%) ";
             const remark = document.getElementById("remarks");
