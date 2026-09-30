@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Huebbe Vocab Practice</title>
         <link rel="stylesheet" href="../style.css">
         <style>
+            @font-face {
+                font-family: 'Highway_Gothic';
+                src: url('../fonts/HWYGWDE.TTF') format('truetype');
+            }
+
+            h1, h2, h3 {
+                font-family: 'Highway_Gothic', system-ui;
+            }
+
             .pTitle, .cInfo, button {
                 background-color: darkorange;
             }
@@ -19,14 +29,30 @@
             button, input {
                 border: 4px solid rgb(0, 0, 75);
             }
+
+            input {
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-family: system-ui;
+                border: 4px solid black;
+                -webkit-appearance: none;
+                appearance: none;
+                font-family: 'Lato_Regular', system-ui;
+            }
+
+            body:has(dialog[open]) {
+                overflow: hidden;
+            }
         </style>
     </head>
     <body>
         <div class="pTitle">
-            <h1>Vocab #4</h1>
+            <h1>Vocab #5</h1>
         </div>
         <h2>Instructions</h2>
-        <p>Welcome to the practice test for Vocab #4. Fill in the blanks beside each sentence with the number that corresponds to the correct word.
+        <p>Welcome to the practice test for Vocab #5. Fill in the blanks beside each sentence with the number that corresponds to the correct word.
             Once you are completed with the test, click the "Submit" button at the bottom of the page to view your results. You can choose to save your 
             results by clicking the "Print Results" button.
         </p>
@@ -39,213 +65,258 @@
                 <th></th>
             </tr>
             <tr>
-                <td>1. tenure</td>
-                <td>11. sovereign</td>
-                <td>21. influx</td>
+                <td>1. occult</td>
+                <td>11. typify</td>
+                <td>21. stimulus</td>
             </tr>
             <tr>
-                <td>2. remuneration</td>
-                <td>12. populace</td>
-                <td>22. preponderance</td>
+                <td>2. lustrous</td>
+                <td>12. peerless</td>
+                <td>22. resolute</td>
             </tr>
             <tr>
-                <td>3. covet</td>
-                <td>13. philanthropy</td>
-                <td>23. fetter</td>
+                <td>3. zodiac</td>
+                <td>13. inane</td>
+                <td>23. marauder</td>
             </tr>
             <tr>
-                <td>4. insensible</td>
-                <td>14. procure</td>
-                <td>24. stipulate</td>
+                <td>4. lunar</td>
+                <td>14. ambiguous</td>
+                <td>24. stark</td>
             </tr>
             <tr>
-                <td>5. condescend</td>
-                <td>15. inanimate</td>
-                <td>25. fraudulent</td>
+                <td>5. premonition</td>
+                <td>15. nationalism</td>
+                <td>25. intimidate</td>
             </tr>
             <tr>
-                <td>6. imperil</td>
-                <td>16. patronage</td>
-                <td>26. status</td>
+                <td>6. intonation</td>
+                <td>16. vehement</td>
+                <td>26. cataract</td>
             </tr>
             <tr>
-                <td>7. renegade</td>
-                <td>17. incur</td>
-                <td>27. populous</td>
+                <td>7. incredulous</td>
+                <td>17. assail</td>
+                <td>27. enliven</td>
             </tr>
             <tr>
-                <td>8. deplete</td>
-                <td>18. constitute</td>
-                <td>28. habitable</td>
+                <td>8. hallucination</td>
+                <td>18. burlesque</td>
+                <td>28. confederation</td>
             </tr>
             <tr>
-                <td>9. traverse</td>
-                <td>19. adage</td>
-                <td>29. rampant</td>
+                <td>9. monotone</td>
+                <td>19. collaborate</td>
+                <td>29. manifest</td>
             </tr>
             <tr>
-                <td>10. erroneous</td>
-                <td>20. anesthetic</td>
-                <td>30. assimilate</td>
+                <td>10. commune</td>
+                <td>20. evoke</td>
+                <td>30. reminiscent</td>
             </tr>
             </table>
         </div>
     <h2>Questions</h2>
-    <p>1. I could not use my phone because I __________ its battery.</p>
+
+    <p>1. When I had a 106 degree fever in August, I had a __________ about a fairy talking to me while in bed.</p>
     <label for="q1" id="t1">Number: </label>
     <input type="number" id="q1" name="q1" min="1" max="30">
-    <p>2. Presidents in the United States have a four year __________.</p>
+    <p>2. In China, during the full __________ moon, the people celebrate by eating mooncakes and reuniting with family members.</p>
     <label for="q2" id="t2">Number: </label>
     <input type="number" id="q2" name="q2" min="1" max="30">
-    <p>3. If you see a mysterious orange cloud in the distance, don't __________ yourself by investigating.</p>
+    <p>3. If you are going to college next year, you will most likely be living in a __________.</p>
     <label for="q3" id="t3">Number: </label>
     <input type="number" id="q3" name="q3" min="1" max="30">
-    <p>4. The Oscar is a highly __________ award.</p>
+    <p>4. Mrs. Huebbe speaks in a very __________ voice.</p>
     <label for="q4" id="t4">Number: </label>
     <input type="number" id="q4" name="q4" min="1" max="30">
-    <p>5. Benedict Arnold is widely regarded as America's most famous __________ for attempting to surrender a fort at West Point to the British.</p>
+    <p>5. Andrea's hair was very __________ and soft.</p>
     <label for="q5" id="t5">Number: </label>
     <input type="number" id="q5" name="q5" min="1" max="30">
-    <p>6. The workers at my local steel mill recently unionized over supposed unfair __________.</p>
+    <p>6. I have a __________ that my guinea pig will die soon.</p>
     <label for="q6" id="t6">Number: </label>
     <input type="number" id="q6" name="q6" min="1" max="30">
-    <p>7. The recent vocab test was highly __________, containing severe grammatical errors.</p>
+    <p>7. According to astrologists, your __________ animal determines your personality.</p>
     <label for="q7" id="t7">Number: </label>
     <input type="number" id="q7" name="q7" min="1" max="30">
-    <p>8. My brother is very __________ to politics, so he does not vote in any elections.</p>
+    <p>8. Did you know that this very website contains __________ games that you can access?</p>
     <label for="q8" id="t8">Number: </label>
     <input type="number" id="q8" name="q8" min="1" max="30">
-    <p>9. You should never __________ to freshmen at GHS.</p>
+    <p>9. I had an __________ look when my brother told me that he was awarded a Pell Grant.</p>
     <label for="q9" id="t9">Number: </label>
     <input type="number" id="q9" name="q9" min="1" max="30">
-    <p>10. It is nearly impossible to __________ the northernmost part of Highway 39.</p>
+    <p>10. Mr. Saenz has an unusually stiff __________, as his voice appears to always stay at the same pitch.</p>
     <label for="q10" id="t10">Number: </label>
     <input type="number" id="q10" name="q10" min="1" max="30">
-    <p>11. The social contract theory states that people give up their most extreme liberties for a __________ to rule over them.</p>
+    <p>11. My parents were __________ about not going to Six Flags after they read about brain injuries occurring on one ride.</p>
     <label for="q11" id="t11">Number: </label>
     <input type="number" id="q11" name="q11" min="1" max="30">
-    <p>12. Don't be reckless with credit card spending, otherwise you will __________ massive debts.</p>
+    <p>12. My father and I __________ to create a solar tracker over the summer.</p>
     <label for="q12" id="t12">Number: </label>
     <input type="number" id="q12" name="q12" min="1" max="30">
-    <p>13. An __________ will make you unconscious instantly.</p>
+    <p>13. Joshua is definitely __________ when it comes to committing mischievious acts.</p>
     <label for="q13" id="t13">Number: </label>
     <input type="number" id="q13" name="q13" min="1" max="30">
-    <p>14. A refrigerator is an example of an __________ object.</p>
+    <p>14. My 2D model of Clifford is very __________ because of how the tail looks.</p>
     <label for="q14" id="t14">Number: </label>
     <input type="number" id="q14" name="q14" min="1" max="30">
-    <p>15. Whenever you're wanting to be risky, always remember the old __________: "look before you leap."</p>
+    <p>15. The town of Centralia __________ an eerie vibe because one wrong step could send you plunging into a wall of fire.</p>
     <label for="q15" id="t15">Number: </label>
     <input type="number" id="q15" name="q15" min="1" max="30">
-    <p>16. It is my passion to start an organization dedicated to __________ for the homeless.</p>
+    <p>16. Glendora __________ the stereotype of a quiet and small town.</p>
     <label for="q16" id="t16">Number: </label>
     <input type="number" id="q16" name="q16" min="1" max="30">
-    <p>17. An uneducated __________ is more subject to political manipulation.</p>
+    <p>17. Racial __________ led to the rise of the National Socialist German Workers' Party in Germany.</p>
     <label for="q17" id="t17">Number: </label>
     <input type="number" id="q17" name="q17" min="1" max="30">
-    <p>18. Being able to __________ good sources is a valuable skill when writing a research paper.</p>
+    <p>18. Some __________ works can come off as disrespectful, as they are mocking a far more serious work.</p>
     <label for="q18" id="t18">Number: </label>
     <input type="number" id="q18" name="q18" min="1" max="30">
-    <p>19. Deleting other people's files on a shared Google Drive folder __________ a violation of district technology policies.</p>
+    <p>19. A coyote can __________ you if you get too close to it.</p>
     <label for="q19" id="t19">Number: </label>
     <input type="number" id="q19" name="q19" min="1" max="30">
-    <p>20. Our local store needs some more __________ in order to survive.</p>
+    <p>20. The directions on my Chinese-made fitness tracker were extremely __________.</p>
     <label for="q20" id="t20">Number: </label>
     <input type="number" id="q20" name="q20" min="1" max="30">
-    <p>21. Have you noticed the spike in __________ phone calls recently?</p>
+    <p>21. The abandoned highway was a __________ contrast to the bustling life of Los Angeles.</p>
     <label for="q21" id="t21">Number: </label>
     <input type="number" id="q21" name="q21" min="1" max="30">
-    <p>22. For nearly two centuries, the U.S. government had a policy forcing Native Americans to __________ to European-American culture.</p>
+    <p>22. I am __________ in writing high quality stories for my vocab assignments.</p>
     <label for="q22" id="t22">Number: </label>
     <input type="number" id="q22" name="q22" min="1" max="30">
-    <p>23. The state of California is very __________, with a population of 39.7 million people.</p>
+    <p>23. For freshmen at GHS, the seniors can look quite __________.</p>
     <label for="q23" id="t23">Number: </label>
     <input type="number" id="q23" name="q23" min="1" max="30">
-    <p>24. GHS rules __________ that only juniors and seniors may go off campus during lunchtime.</p>
+    <p>24. In June 2004, our former house in Arcadia was almost broken into by a __________.</p>
     <label for="q24" id="t24">Number: </label>
     <input type="number" id="q24" name="q24" min="1" max="30">
-    <p>25. Mars may have been a __________ planet at one point because there is evidence that water once existed.</p>
+    <p>25. Some elderly people have developed __________ due to persistent smoking.</p>
     <label for="q25" id="t25">Number: </label>
     <input type="number" id="q25" name="q25" min="1" max="30">
-    <p>26. You should treat everyone with dignity, regardless of __________.</p>
+    <p>26. Cell phones are a __________ for our generation.</p>
     <label for="q26" id="t26">Number: </label>
     <input type="number" id="q26" name="q26" min="1" max="30">
-    <p>27. Ayden was excited during his 18th birthday because he was no longer __________ by the restrictions of childhood.</p>
+    <p>27. Various decorations help __________ the sterile dorm room.</p>
     <label for="q27" id="t27">Number: </label>
     <input type="number" id="q27" name="q27" min="1" max="30">
-    <p>28. This past weekend, there was an __________ of earthquakes in LA County.</p>
+    <p>28. The new song on the radio was __________ of 1980s rock.</p>
     <label for="q28" id="t28">Number: </label>
     <input type="number" id="q28" name="q28" min="1" max="30">
-    <p>29. The __________ disruptions in class led to the teacher assigning extra homework.</p>
+    <p>29. The westward future for Americans was already __________ by the mid 1800s.</p>
     <label for="q29" id="t29">Number: </label>
     <input type="number" id="q29" name="q29" min="1" max="30">
-    <p>30. A __________ of board members voted to put a school modernization bill on the ballot.</p>
+    <p>30. During the Civil War, a __________ consisting of Southern states was formed.</p>
     <label for="q30" id="t30">Number: </label>
     <input type="number" id="q30" name="q30" min="1" max="30">
     <br><br>
-    <h3 style="text-align: center;" id="results"></h3>
-    <h3 style="text-align: center;" id="remarks"></h3>
+    <p style="text-align: center; font-family: 'Lato_Bold', system-ui;" id="results"></h3>
+    <p style="text-align: center; font-family: 'Lato_Regular', system-ui;" id="remarks"></h3>
     <div id="printBtn" style="display: flex; justify-content: center; align-items: center;"></div>
     <div class="center"><button id="submit">Submit!</button></div>
-    </body>
+
+    <dialog id="blankQ">
+        <h2>Are You Sure?</h2>
+        <p style="font-family: 'Lato_Regular', system-ui;" id="confirmMsg"></p>
+        <form method="dialog">
+            <div class="center">
+                <button style="background-color: rgb(108, 29, 0);" id="confirm">Submit</button>
+                <button style="background-color: navy;" id="review">Continue Working</button>
+            </div>
+        </form>
+    </dialog>
 
     <script>
 
         const numPossible = 30;
         const button = document.getElementById("submit");
+        const confirmDiag = document.getElementById("confirmMsg");
+        const confirmSubmit = document.getElementById("confirm");
+        const review = document.getElementById("review");
+        const diag = document.getElementById("blankQ");
         let btnClicked = 0;
 
         function correct(str) {
             document.getElementById(str).textContent = "Correct: ";
-            document.getElementById(str).style = "color: lightgreen;";
+            document.getElementById(str).style = "color: lightgreen; font-family: 'Lato_Italic', system-ui;";
         }
 
         function incorrect(str, correct) {
             document.getElementById(str).textContent = `Incorrect (Correct = ${correct}): `;
-            document.getElementById(str).style = "color: red;";
+            document.getElementById(str).style = "color: red; font-family: 'Lato_Italic', system-ui;";
         }
 
         button.addEventListener("click", function() {
             let numCorrect = 0;
+            let numBlank = 0;
             btnClicked++;
 
 
-            let correctAnswers = [8, 1, 6, 3, 7, 2, 10, 4, 5, 9, 11, 17, 20, 15, 19, 13, 12, 14, 18, 16, 25, 30, 27, 24, 
-                28, 26, 23, 21, 29, 22];
-            correctAnswers.forEach((answer, index) => {
-                if (document.getElementById(`q${index+1}`).valueAsNumber == answer) {
-                    numCorrect++;
-                    correct(`t${index+1}`);
-                } else {
-                    incorrect(`t${index+1}`,`${answer}`);
+            let correctAnswers = [8, 4, 10, 9, 2, 5, 3, 1, 7, 6, 16, 19, 12, 13, 20, 11, 15, 18, 17, 14, 24, 22, 25, 23, 26, 21, 27, 30, 29, 28];
+
+
+            for (let i = 1; i <= 30; i++) {
+                if (document.getElementById(`q${i}`).value == "") {
+                    numBlank++;
+                    console.log(numBlank);
                 }
-            });
+            }
+            if (numBlank > 0) {
+                confirmDiag.textContent = `Are you sure you want to submit? You have ${numBlank} unanswered questions.`;
+                console.log("show modal");
+                console.log(confirmDiag.textContent);
+                diag.showModal();
+                confirmSubmit.addEventListener("click", function() {
+                    diag.close();
+                    checkAnswers();
+                });
+                review.addEventListener("click", function() {
+                    diag.close();
+                });
+            } else {
+                checkAnswers();
+            }
 
-            document.getElementById("results").textContent = "Questions Correct: " + numCorrect + " / " + numPossible + " (" + Math.round(numCorrect / numPossible * 100) + "%) ";
-            const remark = document.getElementById("remarks");
-            if (numCorrect == 0) { remark.textContent = "Did you even try?"; }
-            if (numCorrect > 0 && numCorrect < 18) { remark.textContent = "Oh no! Review the words you got incorrect and continue studying!"; }
-            if (numCorrect >= 18 && numCorrect < 22) { remark.textContent = "Please review the words you got incorrect: it will help you get a higher score on the vocab test."; }
-            if (numCorrect >= 22 && numCorrect < 25) { remark.textContent = "Not bad, but there's definitely some room for improvement. Review the words you got incorrect and pay extra attention to them."; }
-            if (numCorrect >= 25 && numCorrect < 30) { remark.textContent = "Good job on this practice test! Continue to study and review the words you got incorrect."; }
-            if (numCorrect == 30) { remark.textContent = "Excellent job! You are definitely ready for the vocab test!"; }
-
-            if (btnClicked < 2) {
-                const printButton = document.createElement("button");
-                const container = document.getElementById("printBtn");
-                printButton.textContent = "Print Results";
-                printButton.type = "button";
-                printButton.id = "dynamic-btn";
-                printButton.style = "background-color: green; align-self: center;"
-
-                printButton.addEventListener('click', () => {
-                    window.print();
+            function checkAnswers() {
+                correctAnswers.forEach((answer, index) => {
+                    if (document.getElementById(`q${index+1}`).valueAsNumber == answer) {
+                        numCorrect++;
+                        correct(`t${index+1}`);
+                        document.getElementById(`q${index+1}`).style = "border: 2px solid lightgreen;"
+                    } else {
+                        incorrect(`t${index+1}`,`${answer}`);
+                        document.getElementById(`q${index+1}`).style = "border: 2px solid red;"
+                    }
                 });
 
-                container.appendChild(printButton);
+                document.getElementById("results").textContent = "Questions Correct: " + numCorrect + " / " + numPossible + " (" + Math.round(numCorrect / numPossible * 100) + "%) ";
+                const remark = document.getElementById("remarks");
+                if (numCorrect >= 0 && numCorrect < 18) { remark.textContent = "Oh no! Review the words you got incorrect and continue studying!"; }
+                if (numCorrect >= 18 && numCorrect < 22) { remark.textContent = "Please review the words you got incorrect: it will help you get a higher score on the vocab test."; }
+                if (numCorrect >= 22 && numCorrect < 25) { remark.textContent = "Not bad, but there's definitely some room for improvement. Review the words you got incorrect and pay extra attention to them."; }
+                if (numCorrect >= 25 && numCorrect < 30) { remark.textContent = "Good job on this practice test! Continue to study and review the words you got incorrect."; }
+                if (numCorrect == 30) { remark.textContent = "Excellent job! You are definitely ready for the vocab test!"; }
+
+                if (btnClicked < 2) {
+                    const printButton = document.createElement("button");
+                    const container = document.getElementById("printBtn");
+                    printButton.textContent = "Print Results";
+                    printButton.type = "button";
+                    printButton.id = "dynamic-btn";
+                    printButton.style = "background-color: green; align-self: center;"
+
+                    printButton.addEventListener('click', () => {
+                        window.print();
+                    });
+
+                    container.appendChild(printButton);
+                }
             }
+
+            
         });
 
     </script>
+    </body>
     <div class="cInfo">
         <h3>Copyright &copy; 2026 Luke Jiang. All Rights Reserved.</h3>
         <h3>This website is not affiliated with or endorsed by Glendora High School.</h3>
