@@ -12,6 +12,7 @@
 
             h1, h2, h3 {
                 font-family: 'Highway_Gothic', system-ui;
+
             }
 
             .pTitle, .cInfo, button {
@@ -45,20 +46,24 @@
             body:has(dialog[open]) {
                 overflow: hidden;
             }
+
+            header {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: black;
+            }
+
+            table {
+                line-height: 0.5;
+            }
         </style>
-    </head>
-    <body>
-        <div class="pTitle">
-            <h1>Vocab #6</h1>
-        </div>
-        <h2>Instructions</h2>
-        <p>Welcome to the practice test for Vocab #6. Fill in the blanks beside each sentence with the number that corresponds to the correct word.
-            Once you are completed with the test, click the "Submit" button at the bottom of the page to view your results. You can choose to save your 
-            results by clicking the "Print Results" button.
-        </p>
-        <h2>Vocabulary Words Bank</h2>
-        <div class="center">
-         <table>
+
+        <header id="bank">
+            <br>
+            <h3>Vocab #6 Words Bank</h3>
+            <div class="center">
+                <table>
             <tr>
                 <th></th>
                 <th></th>
@@ -115,7 +120,18 @@
                 <td>30. reminiscent</td>
             </tr>
             </table>
-        </div>
+            </div>
+        </header>
+    </head>
+    <body>
+        <h2>Instructions</h2>
+        <p>Welcome to the practice test for Vocab #6. Fill in the blanks beside each sentence with the number that corresponds to the correct word.
+            Once you are completed with the test, click the "Submit" button at the bottom of the page to view your results. You can choose to save your 
+            results by clicking the "Print Results" button.
+        </p>
+        <p>To toggle on/off the words bank, click the button below.</p>
+        <div class="center"><button id="wordsbank" style="background-color: red;">Hide words bank</button></div>
+
     <h2>Questions</h2>
 
     <p>1. When I had a 106 degree fever in August, I had a __________ about a fairy talking to me while in bed.</p>
@@ -233,7 +249,10 @@
         const confirmSubmit = document.getElementById("confirm");
         const review = document.getElementById("review");
         const diag = document.getElementById("blankQ");
+        const bankBtn = document.getElementById("wordsbank");
+        const wordsBank = document.getElementById("bank");
         let btnClicked = 0;
+        let wordsToggled = true;
 
         function correct(str) {
             document.getElementById(str).textContent = "Correct: ";
@@ -315,6 +334,20 @@
             
         });
 
+
+        bankBtn.addEventListener("click", function() {
+            if (!wordsToggled) { 
+                bankBtn.style.backgroundColor = "red";
+                bankBtn.textContent = "Collapse words bank";
+                wordsBank.style.display = "block";
+                wordsToggled = true;
+            } else {
+                bankBtn.style.backgroundColor = "green";
+                bankBtn.textContent = "Show words bank";
+                wordsBank.style.display = "none";
+                wordsToggled = false;
+            }
+        })
     </script>
     </body>
     <div class="cInfo">
