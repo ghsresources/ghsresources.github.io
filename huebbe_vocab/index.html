@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Huebbe Vocab Practice</title>
+        <title>Huebbe Vocab #8 Practice</title>
         <link rel="stylesheet" href="../style.css">
         <style>
             @font-face {
@@ -11,24 +11,27 @@
             }
 
             h1, h2, h3 {
-                font-family: 'Highway_Gothic', system-ui;
-
+                font-family: 'Lato_Bold', system-ui;
+                color: black;
             }
 
-            .pTitle, .cInfo, button {
-                background-color: darkorange;
+            p, label {
+                color: black;
+                font-family: 'Lato_Regular', system-ui;
             }
+
 
             button:hover {
                 background-color: rgb(108, 29, 0);
             }
 
             body {
-                background-color: rgb(0, 0, 75);
+                background-color: #ffffff;
             }
 
             button, input {
-                border: 4px solid rgb(0, 0, 75);
+                border: 1px solid rgb(0, 0, 75);
+                font-family: 'Lato_Regular', system-ui;
             }
 
             input {
@@ -37,7 +40,6 @@
                 padding-top: 8px;
                 padding-bottom: 8px;
                 font-family: system-ui;
-                border: 4px solid black;
                 -webkit-appearance: none;
                 appearance: none;
                 font-family: 'Lato_Regular', system-ui;
@@ -57,11 +59,13 @@
             table {
                 line-height: 0.5;
             }
+
+            td, th {
+                font-family: 'Lato_Regular', monospace;
+            }
         </style>
 
         <header id="bank">
-            <br>
-            <h3>Vocab #6 Words Bank</h3>
             <div class="center">
                 <table>
             <tr>
@@ -70,54 +74,54 @@
                 <th></th>
             </tr>
             <tr>
-                <td>1. occult</td>
-                <td>11. typify</td>
-                <td>21. stimulus</td>
+                <td>1. hulk</td>
+                <td>11. immaculate</td>
+                <td>21. bizzare</td>
             </tr>
             <tr>
-                <td>2. lustrous</td>
-                <td>12. peerless</td>
-                <td>22. resolute</td>
+                <td>2. limpid</td>
+                <td>12. cuisine</td>
+                <td>22. disgorge</td>
             </tr>
             <tr>
-                <td>3. zodiac</td>
-                <td>13. inane</td>
-                <td>23. marauder</td>
+                <td>3. myriad</td>
+                <td>13. culinary</td>
+                <td>23. bebonair</td>
             </tr>
             <tr>
-                <td>4. lunar</td>
-                <td>14. ambiguous</td>
-                <td>24. stark</td>
+                <td>4. luxuriant</td>
+                <td>14. concoct</td>
+                <td>24. linguistic</td>
             </tr>
             <tr>
-                <td>5. premonition</td>
-                <td>15. nationalism</td>
-                <td>25. intimidate</td>
+                <td>5. habitat</td>
+                <td>15. affable</td>
+                <td>25. devious</td>
             </tr>
             <tr>
-                <td>6. intonation</td>
-                <td>16. vehement</td>
-                <td>26. cataract</td>
+                <td>6. generalize</td>
+                <td>16. bilingual</td>
+                <td>26. vagrant</td>
             </tr>
             <tr>
-                <td>7. incredulous</td>
-                <td>17. assail</td>
-                <td>27. enliven</td>
+                <td>7. interloper</td>
+                <td>17. condiment</td>
+                <td>27. aversion</td>
             </tr>
             <tr>
-                <td>8. hallucination</td>
-                <td>18. burlesque</td>
-                <td>28. confederation</td>
+                <td>8. palpitate</td>
+                <td>18. savory</td>
+                <td>28. gullible</td>
             </tr>
             <tr>
-                <td>9. monotone</td>
-                <td>19. collaborate</td>
-                <td>29. manifest</td>
+                <td>9. erratic</td>
+                <td>19. gusto</td>
+                <td>29. perennial</td>
             </tr>
             <tr>
-                <td>10. commune</td>
-                <td>20. evoke</td>
-                <td>30. reminiscent</td>
+                <td>10. eddy</td>
+                <td>20. vintage</td>
+                <td>30. exhilarate</td>
             </tr>
             </table>
             </div>
@@ -125,7 +129,7 @@
     </head>
     <body>
         <h2>Instructions</h2>
-        <p>Welcome to the practice test for Vocab #6. Fill in the blanks beside each sentence with the number that corresponds to the correct word.
+        <p>Welcome to the practice test for Vocab #8. Fill in the blanks beside each sentence with the number that corresponds to the correct word.
             Once you are completed with the test, click the "Submit" button at the bottom of the page to view your results. You can choose to save your 
             results by clicking the "Print Results" button.
         </p>
@@ -133,109 +137,110 @@
         <div class="center"><button id="wordsbank" style="background-color: red;">Hide words bank</button></div>
 
     <h2>Questions</h2>
-
-    <p>1. When I had a 106 degree fever in August, I had a __________ about a fairy talking to me while in bed.</p>
-    <label for="q1" id="t1">Number: </label>
-    <input type="number" id="q1" name="q1" min="1" max="30">
-    <p>2. In China, during the full __________ moon, the people celebrate by eating mooncakes and reuniting with family members.</p>
-    <label for="q2" id="t2">Number: </label>
-    <input type="number" id="q2" name="q2" min="1" max="30">
-    <p>3. If you are going to college next year, you will most likely be living in a __________.</p>
-    <label for="q3" id="t3">Number: </label>
-    <input type="number" id="q3" name="q3" min="1" max="30">
-    <p>4. Mrs. Huebbe speaks in a very __________ voice.</p>
-    <label for="q4" id="t4">Number: </label>
-    <input type="number" id="q4" name="q4" min="1" max="30">
-    <p>5. Andrea's hair was very __________ and soft.</p>
-    <label for="q5" id="t5">Number: </label>
-    <input type="number" id="q5" name="q5" min="1" max="30">
-    <p>6. I have a __________ that my guinea pig will die soon.</p>
-    <label for="q6" id="t6">Number: </label>
-    <input type="number" id="q6" name="q6" min="1" max="30">
-    <p>7. According to astrologists, your __________ animal determines your personality.</p>
-    <label for="q7" id="t7">Number: </label>
-    <input type="number" id="q7" name="q7" min="1" max="30">
-    <p>8. Did you know that this very website contains __________ games that you can access?</p>
-    <label for="q8" id="t8">Number: </label>
-    <input type="number" id="q8" name="q8" min="1" max="30">
-    <p>9. I had an __________ look when my brother told me that he was awarded a Pell Grant.</p>
-    <label for="q9" id="t9">Number: </label>
-    <input type="number" id="q9" name="q9" min="1" max="30">
-    <p>10. Mr. Saenz has an unusually stiff __________, as his voice appears to always stay at the same pitch.</p>
-    <label for="q10" id="t10">Number: </label>
-    <input type="number" id="q10" name="q10" min="1" max="30">
-    <p>11. My parents were __________ about not going to Six Flags after they read about brain injuries occurring on one ride.</p>
-    <label for="q11" id="t11">Number: </label>
-    <input type="number" id="q11" name="q11" min="1" max="30">
-    <p>12. My father and I __________ to create a solar tracker over the summer.</p>
-    <label for="q12" id="t12">Number: </label>
-    <input type="number" id="q12" name="q12" min="1" max="30">
-    <p>13. Joshua is definitely __________ when it comes to committing mischievious acts.</p>
-    <label for="q13" id="t13">Number: </label>
-    <input type="number" id="q13" name="q13" min="1" max="30">
-    <p>14. My 2D model of Clifford is very __________ because of how the tail looks.</p>
-    <label for="q14" id="t14">Number: </label>
-    <input type="number" id="q14" name="q14" min="1" max="30">
-    <p>15. The town of Centralia __________ an eerie vibe because one wrong step could send you plunging into a wall of fire.</p>
-    <label for="q15" id="t15">Number: </label>
-    <input type="number" id="q15" name="q15" min="1" max="30">
-    <p>16. Glendora __________ the stereotype of a quiet and small town.</p>
-    <label for="q16" id="t16">Number: </label>
-    <input type="number" id="q16" name="q16" min="1" max="30">
-    <p>17. Racial __________ led to the rise of the National Socialist German Workers' Party in Germany.</p>
-    <label for="q17" id="t17">Number: </label>
-    <input type="number" id="q17" name="q17" min="1" max="30">
-    <p>18. Some __________ works can come off as disrespectful, as they are mocking a far more serious work.</p>
-    <label for="q18" id="t18">Number: </label>
-    <input type="number" id="q18" name="q18" min="1" max="30">
-    <p>19. A coyote can __________ you if you get too close to it.</p>
-    <label for="q19" id="t19">Number: </label>
-    <input type="number" id="q19" name="q19" min="1" max="30">
-    <p>20. The directions on my Chinese-made fitness tracker were extremely __________.</p>
-    <label for="q20" id="t20">Number: </label>
-    <input type="number" id="q20" name="q20" min="1" max="30">
-    <p>21. The abandoned highway was a __________ contrast to the bustling life of Los Angeles.</p>
-    <label for="q21" id="t21">Number: </label>
-    <input type="number" id="q21" name="q21" min="1" max="30">
-    <p>22. I am __________ in writing high quality stories for my vocab assignments.</p>
-    <label for="q22" id="t22">Number: </label>
-    <input type="number" id="q22" name="q22" min="1" max="30">
-    <p>23. For freshmen at GHS, the seniors can look quite __________.</p>
-    <label for="q23" id="t23">Number: </label>
-    <input type="number" id="q23" name="q23" min="1" max="30">
-    <p>24. In June 2004, our former house in Arcadia was almost broken into by a __________.</p>
-    <label for="q24" id="t24">Number: </label>
-    <input type="number" id="q24" name="q24" min="1" max="30">
-    <p>25. Some elderly people have developed __________ due to persistent smoking.</p>
-    <label for="q25" id="t25">Number: </label>
-    <input type="number" id="q25" name="q25" min="1" max="30">
-    <p>26. Cell phones are a __________ for our generation.</p>
-    <label for="q26" id="t26">Number: </label>
-    <input type="number" id="q26" name="q26" min="1" max="30">
-    <p>27. Various decorations help __________ the sterile dorm room.</p>
-    <label for="q27" id="t27">Number: </label>
-    <input type="number" id="q27" name="q27" min="1" max="30">
-    <p>28. The new song on the radio was __________ of 1980s rock.</p>
-    <label for="q28" id="t28">Number: </label>
-    <input type="number" id="q28" name="q28" min="1" max="30">
-    <p>29. The westward future for Americans was already __________ by the mid 1800s.</p>
-    <label for="q29" id="t29">Number: </label>
-    <input type="number" id="q29" name="q29" min="1" max="30">
-    <p>30. During the Civil War, a __________ consisting of Southern states was formed.</p>
-    <label for="q30" id="t30">Number: </label>
-    <input type="number" id="q30" name="q30" min="1" max="30">
-    <br><br>
+    <div class="questions" style="width: 70%; margin: auto; border: 1px solid black;">
+        <p>1. The Eaton Fire disrupted the natural __________ of many animals in the area.</p>
+        <label for="q1" id="t1">Number: </label>
+        <input type="number" id="q1" name="q1" min="1" max="30">
+        <p>2. In statistics, you can only __________ a conclusion about a population when taking a random sample.</p>
+        <label for="q2" id="t2">Number: </label>
+        <input type="number" id="q2" name="q2" min="1" max="30">
+        <p>3. I recently discovered a large __________ washed up on the shore of a beach.</p>
+        <label for="q3" id="t3">Number: </label>
+        <input type="number" id="q3" name="q3" min="1" max="30">
+        <p>4. My heart began to __________ when I found out that I got a 52 on the Government test.</p>
+        <label for="q4" id="t4">Number: </label>
+        <input type="number" id="q4" name="q4" min="1" max="30">
+        <p>5. The lake looked very clear and __________.</p>
+        <label for="q5" id="t5">Number: </label>
+        <input type="number" id="q5" name="q5" min="1" max="30">
+        <p>6. The drunk driver made incredibly __________ movements on the highway.</p>
+        <label for="q6" id="t6">Number: </label>
+        <input type="number" id="q6" name="q6" min="1" max="30">
+        <p>7. The oak trees at Glendora High School are very __________.</p>
+        <label for="q7" id="t7">Number: </label>
+        <input type="number" id="q7" name="q7" min="1" max="30">
+        <p>8. There are a __________ of opportunities awaiting you after graduation.</p>
+        <label for="q8" id="t8">Number: </label>
+        <input type="number" id="q8" name="q8" min="1" max="30">
+        <p>9. You do not want to be an __________, because others will notice that you do not belong.</p>
+        <label for="q9" id="t9">Number: </label>
+        <input type="number" id="q9" name="q9" min="1" max="30">
+        <p>10. During the rough storm, there were numerous __________ in the sea.</p>
+        <label for="q10" id="t10">Number: </label>
+        <input type="number" id="q10" name="q10" min="1" max="30">
+        <p>11. The past summer, the wall between a 300 and 400 quad classroom was torn down to create one big __________ arts classroom.</p>
+        <label for="q11" id="t11">Number: </label>
+        <input type="number" id="q11" name="q11" min="1" max="30">
+        <p>12. Italian __________ consists of fresh ingredients, pasta, and tomato sauces.</p>
+        <label for="q12" id="t12">Number: </label>
+        <input type="number" id="q12" name="q12" min="1" max="30">
+        <p>13. I recently discovered a __________ Singer sewing machine in my house, manufactured in May 1962.</p>
+        <label for="q13" id="t13">Number: </label>
+        <input type="number" id="q13" name="q13" min="1" max="30">
+        <p>14. Being __________ is a very useful skill to have if you are a diplomat.</p>
+        <label for="q14" id="t14">Number: </label>
+        <input type="number" id="q14" name="q14" min="1" max="30">
+        <p>15. The condition of my father's 2014 Mercedes Benz E350 is __________.</p>
+        <label for="q15" id="t15">Number: </label>
+        <input type="number" id="q15" name="q15" min="1" max="30">
+        <p>16. Spaghetti is usually combined with a __________ before it is served.</p>
+        <label for="q16" id="t16">Number: </label>
+        <input type="number" id="q16" name="q16" min="1" max="30">
+        <p>17. Cheez-its are usually very __________.</p>
+        <label for="q17" id="t17">Number: </label>
+        <input type="number" id="q17" name="q17" min="1" max="30">
+        <p>18. Josh __________ a wild story about Dylan burying a body.</p>
+        <label for="q18" id="t18">Number: </label>
+        <input type="number" id="q18" name="q18" min="1" max="30">
+        <p>19. I believe that John is a very __________ person because of his friendly nature.</p>
+        <label for="q19" id="t19">Number: </label>
+        <input type="number" id="q19" name="q19" min="1" max="30">
+        <p>20. James described his summer vacation with great __________.</p>
+        <label for="q20" id="t20">Number: </label>
+        <input type="number" id="q20" name="q20" min="1" max="30">
+        <p>21. The 105 degree heat in October is very __________.</p>
+        <label for="q21" id="t21">Number: </label>
+        <input type="number" id="q21" name="q21" min="1" max="30">
+        <p>22. Alex hatched a __________ plan to prank the principal.</p>
+        <label for="q22" id="t22">Number: </label>
+        <input type="number" id="q22" name="q22" min="1" max="30">
+        <p>23. The high fever caused me to __________ numerous times.</p>
+        <label for="q23" id="t23">Number: </label>
+        <input type="number" id="q23" name="q23" min="1" max="30">
+        <p>24. I think Luke is a very __________ person.</p>
+        <label for="q24" id="t24">Number: </label>
+        <input type="number" id="q24" name="q24" min="1" max="30">
+        <p>25. If Alan asks you to let him copy your homework, don't be __________.</p>
+        <label for="q25" id="t25">Number: </label>
+        <input type="number" id="q25" name="q25" min="1" max="30">
+        <p>26. Some people blame the newly extended A Line for the rise in __________ people in Glendora.</p>
+        <label for="q26" id="t26">Number: </label>
+        <input type="number" id="q26" name="q26" min="1" max="30">
+        <p>27. The new Fast & Furious Ride at Universal seemed to __________ a lot of riders.</p>
+        <label for="q27" id="t27">Number: </label>
+        <input type="number" id="q27" name="q27" min="1" max="30">
+        <p>28. Many people have an __________ to Mrs. Huebbe.</p>
+        <label for="q28" id="t28">Number: </label>
+        <input type="number" id="q28" name="q28" min="1" max="30">
+        <p>29. Traffic congestion will always be a __________ problem.</p>
+        <label for="q29" id="t29">Number: </label>
+        <input type="number" id="q29" name="q29" min="1" max="30">
+        <p>30. A __________ barrier can create issues with cultural understanding.</p>
+        <label for="q30" id="t30">Number: </label>
+        <input type="number" id="q30" name="q30" min="1" max="30">
+        <br><br>
+    </div>
     <p style="text-align: center; font-family: 'Lato_Bold', system-ui;" id="results"></h3>
     <p style="text-align: center; font-family: 'Lato_Regular', system-ui;" id="remarks"></h3>
     <div id="printBtn" style="display: flex; justify-content: center; align-items: center;"></div>
-    <div class="center"><button id="submit">Submit!</button></div>
+    <div class="center"><button id="submit" style="background-color: red;">Submit!</button></div>
 
     <dialog id="blankQ">
-        <h2>Are You Sure?</h2>
+        <h2 style="font-size: 24px;">Confirm Submission</h2>
         <p style="font-family: 'Lato_Regular', system-ui;" id="confirmMsg"></p>
         <form method="dialog">
             <div class="center">
-                <button style="background-color: rgb(108, 29, 0);" id="confirm">Submit</button>
+                <button style="background-color: red;" id="confirm">Submit</button>
                 <button style="background-color: navy;" id="review">Continue Working</button>
             </div>
         </form>
@@ -256,7 +261,7 @@
 
         function correct(str) {
             document.getElementById(str).textContent = "Correct: ";
-            document.getElementById(str).style = "color: lightgreen; font-family: 'Lato_Italic', system-ui;";
+            document.getElementById(str).style = "color: green; font-family: 'Lato_Italic', system-ui;";
         }
 
         function incorrect(str, correct) {
@@ -270,19 +275,16 @@
             btnClicked++;
 
 
-            let correctAnswers = [8, 4, 10, 9, 2, 5, 3, 1, 7, 6, 16, 19, 12, 13, 20, 11, 15, 18, 17, 14, 24, 22, 25, 23, 26, 21, 27, 30, 29, 28];
+            let correctAnswers = [5, 6, 1, 8, 2, 9, 4, 3, 7, 10, 13, 12, 20, 16, 11, 17, 18, 14, 15, 19, 21, 25, 22, 23, 28, 26, 30, 27, 29, 24];
 
 
-            for (let i = 1; i <= 30; i++) {
+            for (let i = 1; i <= numPossible; i++) {
                 if (document.getElementById(`q${i}`).value == "") {
                     numBlank++;
-                    console.log(numBlank);
                 }
             }
             if (numBlank > 0) {
-                confirmDiag.textContent = `Are you sure you want to submit? You have ${numBlank} unanswered questions.`;
-                console.log("show modal");
-                console.log(confirmDiag.textContent);
+                confirmDiag.textContent = `Are you sure you want to submit? You have ${numBlank} unanswered question(s).`;
                 diag.showModal();
                 confirmSubmit.addEventListener("click", function() {
                     diag.close();
@@ -300,14 +302,14 @@
                     if (document.getElementById(`q${index+1}`).valueAsNumber == answer) {
                         numCorrect++;
                         correct(`t${index+1}`);
-                        document.getElementById(`q${index+1}`).style = "border: 2px solid lightgreen;"
+                        document.getElementById(`q${index+1}`).style = "border: 2px solid green;"
                     } else {
                         incorrect(`t${index+1}`,`${answer}`);
                         document.getElementById(`q${index+1}`).style = "border: 2px solid red;"
                     }
                 });
 
-                document.getElementById("results").textContent = "Questions Correct: " + numCorrect + " / " + numPossible + " (" + Math.round(numCorrect / numPossible * 100) + "%) ";
+                document.getElementById("results").textContent = "Your score: " + numCorrect + " out of " + numPossible + " (" + Math.round(numCorrect / numPossible * 100) + "%) ";
                 const remark = document.getElementById("remarks");
                 if (numCorrect >= 0 && numCorrect < 18) { remark.textContent = "Oh no! Review the words you got incorrect and continue studying!"; }
                 if (numCorrect >= 18 && numCorrect < 22) { remark.textContent = "Please review the words you got incorrect: it will help you get a higher score on the vocab test."; }
@@ -351,7 +353,7 @@
     </script>
     </body>
     <div class="cInfo">
-        <h3>Copyright &copy; 2026 Luke Jiang. All Rights Reserved.</h3>
-        <h3>This website is not affiliated with or endorsed by Glendora High School.</h3>
+        <p style="color: white;">Copyright &copy; 2026 Luke Jiang. All Rights Reserved.</h3>
+        <p style="color: white;">This website is not affiliated with or endorsed by Glendora High School.</h3>
     </div>
 </html>

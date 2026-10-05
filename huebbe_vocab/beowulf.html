@@ -43,6 +43,15 @@
             input {
                 margin-left: 5%;
             }
+
+            .que {
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
         </style>
     </head>
     <body>
@@ -50,34 +59,45 @@
             <h1 style="font-family: 'Impact', system-ui;">Beowulf Practice Test</h1>
         </div>
         <p><strong>Instructions:</strong> The test contains 40 multiple choice questions and 4 free response items.</p>
-        <div class="center">
-            <table id="q1">
-                <tr>
-                    <th>Question 1</th>
-                    <th>1 pts</th>
-                </tr>
-            </table>
+        <div class="questions" style="width: 70%; margin: auto;">
+            <div class="que">
+                <table id="q1">
+                    <tr>
+                        <th>Question 1</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <form>
+                <fieldset>
+                    <p>Beowulf comes to Heorot from</p>
+                    <div>
+                    <input type="radio" id="A" name="q1" value="A">
+                    <label for="A">England</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q1" value="B">
+                    <label for="B">Denmark</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q1" value="C">
+                    <label for="C">Sweden</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q1" value="D">
+                    <label for="D">Germany</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 2</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <form>
-            <fieldset>
-                <p>Beowulf comes to Heorot from</p>
-                <div>
-                <input type="radio" id="A" name="q1" value="A">
-                <label for="A">England</label>
-                </div>
-                <div>
-                <input type="radio" id="B" name="q1" value="B">
-                <label for="B">Denmark</label>
-                </div>
-                <div>
-                <input type="radio" id="C" name="q1" value="C">
-                <label for="C">Sweden</label>
-                </div>
-                <div>
-                <input type="radio" id="D" name="q1" value="D">
-                <label for="D">Germany</label>
-                </div>
-            </fieldset>
-        </form>
+        <div class="center"><button>Submit!</button></div>
     </body>
 </html>
