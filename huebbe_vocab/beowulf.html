@@ -5,8 +5,14 @@
         <title>Beowulf Test</title>
         <link rel="stylesheet" href="../style.css">
         <style>
-            .pTitle, .cInfo, button {
+            .pTitle{
                 background-color: darkgreen;
+            }
+
+            h1, h2, h3 {
+                font-family: 'Lato_Bold', system-ui;
+                color: black;
+                margin-left: 0%;
             }
 
             button:hover {
@@ -14,7 +20,9 @@
             }
 
             button {
-                border: 4px solid black;
+                border: 1px solid darkred;
+                background-color: red;
+                font-family: 'Lato_Regular', system-ui;
             }
 
             p {
@@ -51,15 +59,50 @@
                 align-items: center;
                 padding-top: 30px;
                 padding-bottom: 30px;
+                border-top: 0px;
+                border-bottom: 0px;
+            }
+
+            .info {
+                border-bottom: 1px solid #333;
+                width: 70%;
+                margin: auto;
+            }
+
+            input {
+                cursor: pointer;
+            }
+
+            label {
+                margin-left: 1%;
             }
         </style>
     </head>
     <body>
-        <div class="pTitle">
-            <h1 style="font-family: 'Impact', system-ui;">Beowulf Practice Test</h1>
+        <div class="info">
+            <h2>Beowulf Final</h2>
         </div>
-        <p><strong>Instructions:</strong> The test contains 40 multiple choice questions and 4 free response items.</p>
+        <div class="info">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><strong>Due</strong> Oct 7 at 10:30 a.m.</td>
+                    <td><strong>Points</strong> 59</td>
+                    <td><strong>Questions</strong> 59</td>
+                </tr>
+                <tr>
+                    <td><strong>Available</strong> Oct 7 at 8:30 a.m. - Oct 7 at 10:30 a.m. (2 hours)</td>
+                    <td><strong>Time Limit</strong> None</td>
+                </tr>
+            </table>
+        </div>
+        <br>
         <div class="questions" style="width: 70%; margin: auto;">
+        <p><strong>Multiple Choice:</strong> Identify the letter of the choice that best completes the statement or answersMC the question.</p>
             <div class="que">
                 <table id="q1">
                     <tr>
@@ -68,6 +111,7 @@
                     </tr>
                 </table>
             </div>
+            <p style="text-align: center;" id="1"></p>
             <form>
                 <fieldset>
                     <p>Beowulf comes to Heorot from</p>
@@ -97,7 +141,1543 @@
                     </tr>
                 </table>
             </div>
+            <p style="text-align: center;" id="2"></p>
+            <form>
+                <fieldset>
+                    <p>After his death, Scyld's body is</p>
+                    <div>
+                    <input type="radio" id="A" name="q2" value="A">
+                    <label for="A">burned on a funeral pyre</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q2" value="B">
+                    <label for="B">buried next to his mead-hall</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q2" value="C">
+                    <label for="C">buried in a ship at Sutton Hoo</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q2" value="D">
+                    <label for="D">set adrift at sea in a ship</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 3</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="3"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel is</p>
+                    <div>
+                    <input type="radio" id="A" name="q3" value="A">
+                    <label for="A">a blend of elements from Scandinavian folklore and Christian folklore</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q3" value="B">
+                    <label for="B">frequently mentioned in the Old Testament</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q3" value="C">
+                    <label for="C">found in nearly all old folk-epics</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q3" value="D">
+                    <label for="D">a minor deity associated with rural settings in epic poetry</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 4</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="4"></p>
+            <form>
+                <fieldset>
+                    <p>Which of the following compound words is a kenning?</p>
+                    <div>
+                    <input type="radio" id="A" name="q4" value="A">
+                    <label for="A">sea-cliffs</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q4" value="B">
+                    <label for="B">ocean-journey</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q4" value="C">
+                    <label for="C">swan-road</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q4" value="D">
+                    <label for="D">war-gear</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 5</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="5"></p>
+            <form>
+                <fieldset>
+                    <p>Unferth taunts Beowulf because</p>
+                    <div>
+                    <input type="radio" id="A" name="q5" value="A">
+                    <label for="A">he resents Beowulf, who once beat him in a swimming match</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q5" value="B">
+                    <label for="B">Hrothgar, who secretly dislikes Beowulf, pays Unferth</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q5" value="C">
+                    <label for="C">Beowulf once taunted Unferth, who consequently holds a grudge against him</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q5" value="D">
+                    <label for="D">he is jealous of Beowulf's fame and boldness</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 6</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="6"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf's personal reason for coming to Denmark is his</p>
+                    <div>
+                    <input type="radio" id="A" name="q6" value="A">
+                    <label for="A">loyalty to Welthow.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q6" value="B">
+                    <label for="B">desire for lasting fame.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q6" value="C">
+                    <label for="C">friendship for Hrothgar.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q6" value="D">
+                    <label for="D">obedience to his leader's orders.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 7</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="7"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf defeats Grendel with his</p>
+                    <div>
+                    <input type="radio" id="A" name="q7" value="A">
+                    <label for="A">sword.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q7" value="B">
+                    <label for="B">shield.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q7" value="C">
+                    <label for="C">powerful grip.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q7" value="D">
+                    <label for="D">loyal followers.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 8</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="8"></p>
+            <form>
+                <fieldset>
+                    <p>Which of the following does NOT describe Grendel?</p>
+                    <div>
+                    <input type="radio" id="A" name="q8" value="A">
+                    <label for="A">Sinister</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q8" value="B">
+                    <label for="B">Cowardly</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q8" value="C">
+                    <label for="C">Destructive</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q8" value="D">
+                    <label for="D">Evil</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 9</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="9"></p>
+            <form>
+                <fieldset>
+                    <p>Which event from the story helps the reader infer that Beowulf is <u>honorable</u>?</p>
+                    <div>
+                    <input type="radio" id="A" name="q9" value="A">
+                    <label for="A">Beowulf refuses to use weapons because Grendel has none.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q9" value="B">
+                    <label for="B">Beowulf boasts that Hrothgar is his cousin.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q9" value="C">
+                    <label for="C">Beowulf repeatedly proves he is the strongest of the Geats.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q9" value="D">
+                    <label for="D">Beowulf vows to ambush Grendel and destroy the monster.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 10</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="10"></p>
+            <form>
+                <fieldset>
+                    <p>What happened during Beowulf's battle with Grendel's mother that led Hrothgar's men to leave the lake?</p>
+                    <div>
+                    <input type="radio" id="A" name="q10" value="A">
+                    <label for="A">A rumor quickly spread that Grendel's mother had the help of other lake monsters on her side.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q10" value="B">
+                    <label for="B">Waves surged and the lake became bloody, so they assumed Beowulf had died.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q10" value="C">
+                    <label for="C">A bright light shone from underwater and rose above the water to show a bloody sword.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q10" value="D">
+                    <label for="D">They felt that Beowulf had been underwater too long to still be alive or fighting valiantly.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 11</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="11"></p>
+            <form>
+                <fieldset>
+                    <p>"Candle of heaven" is an example of</p>
+                    <div>
+                    <input type="radio" id="A" name="q11" value="A">
+                    <label for="A">alliteration.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q11" value="B">
+                    <label for="B">caesura.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q11" value="C">
+                    <label for="C">simile.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q11" value="D">
+                    <label for="D">a kenning.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 12</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="12"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf kills Grendel's mother with</p>
+                    <div>
+                    <input type="radio" id="A" name="q12" value="A">
+                    <label for="A">a large river rock</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q12" value="B">
+                    <label for="B">the sword loaned to him by Unferth</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q12" value="C">
+                    <label for="C">Grendel's detached arm</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q12" value="D">
+                    <label for="D">a sword he finds that had been made by the giants</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 13</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="13"></p>
+            <form>
+                <fieldset>
+                    <p>In the sentence "but the bold one found that the battle-flasher would bite no longer, nor harm her life," battle-flasher is a kenning for</p>
+                    <div>
+                    <input type="radio" id="A" name="q13" value="A">
+                    <label for="A">sword</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q13" value="B">
+                    <label for="B">Hrothgar</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q13" value="C">
+                    <label for="C">Grendel's mother</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q13" value="D">
+                    <label for="D">horse</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 14</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="14"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf's main motive for fighting the dragon is</p>
+                    <div>
+                    <input type="radio" id="A" name="q14" value="A">
+                    <label for="A">to build his reputation and win treasure</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q14" value="B">
+                    <label for="B">to be a noble leader and protect his people</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q14" value="C">
+                    <label for="C">to acquire land for his expanding kingdom</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q14" value="D">
+                    <label for="D">to show off his ability to influence fate</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 15</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="15"></p>
+            <form>
+                <fieldset>
+                    <p>Wiglaf encouraged his comrades to help Beowulf fight the dragon because...</p>
+                    <div>
+                    <input type="radio" id="A" name="q15" value="A">
+                    <label for="A">he reminded them that Beowulf is too old and sick to fight.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q15" value="B">
+                    <label for="B">it will increase Beowulf's chance for victory.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q15" value="C">
+                    <label for="C">then they will be able to claim the monster's treasure.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q15" value="D">
+                    <label for="D">in the past they had promised to repay Beowulf's kindness with their lives.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 16</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="16"></p>
+            <form>
+                <fieldset>
+                    <p>During Beowulf's battle with the dragon, all of his men</p>
+                    <div>
+                    <input type="radio" id="A" name="q16" value="A">
+                    <label for="A">except one flee to save their lives</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q16" value="B">
+                    <label for="B">stand watching the battle, anxious for the outcome</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q16" value="C">
+                    <label for="C">join in the battle with the dragon, but are overcome and run away</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q16" value="D">
+                    <label for="D">demonstrate their usual loyalty to Beowulf</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 17</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="17"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf dies because</p>
+                    <div>
+                    <input type="radio" id="A" name="q17" value="A">
+                    <label for="A">his heart is broken by the cowardice of his thanes</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q17" value="B">
+                    <label for="B">the dragon inflicts a mortal wound</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q17" value="C">
+                    <label for="C">Wiglaf treacherously stabs him in the heat of the battle</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q17" value="D">
+                    <label for="D">he has a heart attack, the result of old age, during his battle with the dragon</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 18</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="18"></p>
+            <form>
+                <fieldset>
+                    <p>After his death, Beowulf's body is burned and</p>
+                    <div>
+                    <input type="radio" id="A" name="q18" value="A">
+                    <label for="A">placed in a barrow on a cliff overlooking the sea</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q18" value="B">
+                    <label for="B">set adrift in a treasure-bearing ship </label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q18" value="C">
+                    <label for="C">buried in the dragon's cave, the scene of his last earthly action </label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q18" value="D">
+                    <label for="D">scattered on the ocean, as befits a sea-going warrior</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 19</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="19"></p>
+            <form>
+                <fieldset>
+                    <p>Wiglaf tells the thanes who are not present at Beowulf's death that </p>
+                    <div>
+                    <input type="radio" id="A" name="q19" value="A">
+                    <label for="A">they will have opportunities in the future to make up for their cowardice</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q19" value="B">
+                    <label for="B">they need not dwell on their guilt because Beowulf forgave them</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q19" value="C">
+                    <label for="C">they must do ritual penance for their cowardice</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q19" value="D">
+                    <label for="D">death is better than a life tainted by shame</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 20</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="20"></p>
+            <form>
+                <fieldset>
+                    <p>The dragon terrorized Geatland because...</p>
+                    <div>
+                    <input type="radio" id="A" name="q20" value="A">
+                    <label for="A">he was testing Beowulf's strength and integrity</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q20" value="B">
+                    <label for="B">he sought revenge because his sleep was interrupted by a slave who stole from him.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q20" value="C">
+                    <label for="C">he was angry that Beowulf refused to return the stolen cup.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q20" value="D">
+                    <label for="D">he was guarding the treasures from an ancient, noble civilization.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 21</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="21"></p>
+            <form>
+                <fieldset>
+                    <p>At his death, Beowulf</p>
+                    <div>
+                    <input type="radio" id="A" name="q21" value="A">
+                    <label for="A">expresses regret for many missed opportunities in his life</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q21" value="B">
+                    <label for="B">reprimands his thanes for their cowardice</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q21" value="C">
+                    <label for="C">thanks God for the riches his people will receive and plans his own funeral</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q21" value="D">
+                    <label for="D">orders that his son, though young, take over as king</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 22</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="22"></p>
+            <form>
+                <fieldset>
+                    <p>What did the Geats do to memorialize Beowulf?</p>
+                    <div>
+                    <input type="radio" id="A" name="q22" value="A">
+                    <label for="A">Beowulf had insisted they bury his sword with the dragon.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q22" value="B">
+                    <label for="B">They bring his mailshirt and sword to Wiglaf to use as the new leader.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q22" value="C">
+                    <label for="C">They built a tower near the edge of the water and sang about his achievements.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q22" value="D">
+                    <label for="D">Most of the Geats had deserted him in battle, so nothing was done.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 23</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="23"></p>
+            <form>
+                <fieldset>
+                    <p><i>Beowulf</i>, the Anglo-Saxon epic poem, was written</p>
+                    <div>
+                    <input type="radio" id="A" name="q23" value="A">
+                    <label for="A">by Alfred the Great</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q23" value="B">
+                    <label for="B">by Bede</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q23" value="C">
+                    <label for="C">by a story-teller in the royal court</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q23" value="D">
+                    <label for="D">by a poet whose identity remains a mystery</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 24</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="24"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf asks Wiglaf to be the next leader because Wiglaf</p>
+                    <div>
+                    <input type="radio" id="A" name="q24" value="A">
+                    <label for="A">defeats the dragon alone</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q24" value="B">
+                    <label for="B">asks to be the Geats' next leader</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q24" value="C">
+                    <label for="C">stands with Beowulf to fight the dragon</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q24" value="D">
+                    <label for="D">shows more strength than Beowulf does</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 25</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="25"></p>
+            <form>
+                <fieldset>
+                    <p>Which is a universal theme in the epic <i>Beowulf</i>?</p>
+                    <div>
+                    <input type="radio" id="A" name="q25" value="A">
+                    <label for="A">Kingdoms survive and prosper through warfare.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="B" name="q25" value="B">
+                    <label for="B">There will always be another kingdom to help.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="C" name="q25" value="C">
+                    <label for="C">Dragons and monsters await everyone.</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="D" name="q25" value="D">
+                    <label for="D">A good leader is brave and fearless.</label>
+                    </div>
+                </fieldset>
+            </form>
+            <p><strong>True/False:</strong> select "True" or "False" for each statement.</p>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 26</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="26"></p>
+            <form>
+                <fieldset>
+                    <p><i>Beowulf</i> is a folk-epic.</p>
+                    <div>
+                    <input type="radio" id="T" name="q26" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q26" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 27</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="27"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel attacks Heorot.</p>
+                    <div>
+                    <input type="radio" id="T" name="q27" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q27" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+        <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 28</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
         </div>
-        <div class="center"><button>Submit!</button></div>
+            <p style="text-align: center;" id="28"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel dies at Heorot</p>
+                    <div>
+                    <input type="radio" id="T" name="q28" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q28" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 29</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="29"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel's dam lives in a cave at the bottom of a lake.</p>
+                    <div>
+                    <input type="radio" id="T" name="q29" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q29" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 30</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="30"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf cuts off Grendel's mother's head to bring to the surface.</p>
+                    <div>
+                    <input type="radio" id="T" name="q30" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q30" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 31</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="31"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf and Unferth are enemies when they part.</p>
+                    <div>
+                    <input type="radio" id="T" name="q31" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q31" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 32</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="32"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf's sword turns into stone after he uses it to try to kill Grendel's mother.</p>
+                    <div>
+                    <input type="radio" id="T" name="q32" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q32" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 33</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="33"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf brings the gem-encrusted hilt of a sword back from his underwater fight.</p>
+                    <div>
+                    <input type="radio" id="T" name="q33" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q33" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 34</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="34"></p>
+            <form>
+                <fieldset>
+                    <p>Although Hrothgar is grateful for Beowulf's help, he asks Beowulf to leave because Beowulf's popularity is undermining his authority.</p>
+                    <div>
+                    <input type="radio" id="T" name="q34" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q34" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 35</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="35"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel does not assist his mother in her struggle with Beowulf because he feels certain she will win.</p>
+                    <div>
+                    <input type="radio" id="T" name="q35" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q35" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 36</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="36"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf goes to fight the dragon with the same optimism he felt as he prepared to battle Grendel earlier in the poem.</p>
+                    <div>
+                    <input type="radio" id="T" name="q36" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q36" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 37</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="37"></p>
+            <form>
+                <fieldset>
+                    <p>The dragon attacks the Geats because one of the Geats has stolen a golden goblet from the treasure trove the	dragon guards.</p>
+                    <div>
+                    <input type="radio" id="T" name="q37" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q37" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 38</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="38"></p>
+            <form>
+                <fieldset>
+                    <p>The dragon kills Beowulf by biting off his head.</p>
+                    <div>
+                    <input type="radio" id="T" name="q38" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q38" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 39</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="39"></p>
+            <form>
+                <fieldset>
+                    <p>Wiglaf helps Beowulf slay the dragon.</p>
+                    <div>
+                    <input type="radio" id="T" name="q39" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q39" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 40</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="40"></p>
+            <form>
+                <fieldset>
+                    <p>At the end of the poem, the Geats look forward to a long period of peace and prosperity under a new king.</p>
+                    <div>
+                    <input type="radio" id="T" name="q40" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q40" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 41</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="41"></p>
+            <form>
+                <fieldset>
+                    <p>Beowulf defeats Grendel's mother with only his bare hands.</p>
+                    <div>
+                    <input type="radio" id="T" name="q41" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q41" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 42</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="42"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel's mother kidnaps Hrothgar and murders his best friend.</p>
+                    <div>
+                    <input type="radio" id="T" name="q42" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q42" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 43</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="43"></p>
+            <form>
+                <fieldset>
+                    <p>Grendel maintained his control over the Danes for twelve years.</p>
+                    <div>
+                    <input type="radio" id="T" name="q43" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q43" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+             <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 44</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="44"></p>
+            <form>
+                <fieldset>
+                    <p>Hygelac was not happy about Beowulf leaving him to battle Grendel; there were many negative omens.</p>
+                    <div>
+                    <input type="radio" id="T" name="q44" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q44" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 45</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="45"></p>
+            <form>
+                <fieldset>
+                    <p>The tower to honor Beowulf upon his death was constructed by a grateful Hrothgar.</p>
+                    <div>
+                    <input type="radio" id="T" name="q45" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q45" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 46</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="46"></p>
+            <form>
+                <fieldset>
+                    <p>One central theme of the story is loyalty, presented through Beowulf and Hrothgar and their followers.</p>
+                    <div>
+                    <input type="radio" id="T" name="q46" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q46" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 47</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="47"></p>
+            <form>
+                <fieldset>
+                    <p>The monsters in the text represent the evil in Pagan beliefs.</p>
+                    <div>
+                    <input type="radio" id="T" name="q47" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q47" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <div class="que">
+                <table>
+                    <tr>
+                        <th>Question 48</th>
+                        <th>1 pt</th>
+                    </tr>
+                </table>
+            </div>
+            <p style="text-align: center;" id="48"></p>
+            <form>
+                <fieldset>
+                    <p>Before Beowulf died, he chastised the thanes who fled the battle.</p>
+                    <div>
+                    <input type="radio" id="T" name="q48" value="T">
+                    <label for="T">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="F" name="q48" value="F">
+                    <label for="F">False</label>
+                    </div>
+                    <div>
+                </fieldset>
+            </form>
+            <p><strong>Character Matching:</strong> Match each description with the corresponding character.</p>
+            <div class="que" style="border-top: 1px solid #333; border-bottom: 1px solid #333;">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options" id="options1">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Danish thane who taunts Beowulf; later offers a sword.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options2" id="options2">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>King of the Geats who sends his men to help the Danes.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options3" id="options3">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Important Danish official; killed by Grendel's mother.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options4" id="options4">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>After a slave steals from his treasure, goes on a rampage.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options5" id="options5">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Only thane who stays with hero during the dragon battle</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options6" id="options6">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Heroic warrior who later becomes King of the Geats</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options7" id="options7">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Grand mead-hall named for stag to symbolize kinship</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options8" id="options8">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>King of the Danes; builder of famous mead-hall</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options9" id="options9">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Arrives from sea as a child. Founded royal Danish line.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options10" id="options10">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Sea nymph-like monster; seeks vengeance on Danes</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="options11" id="options11">
+                            <option value=""></option>
+                            <option value="Scyld">Scyld</option>
+                            <option value="Hrothgar">Hrothgar</option>
+                            <option value="Heorot">Heorot</option>
+                            <option value="Grendel">Grendel</option>
+                            <option value="Hygelac">Hygelac</option>
+                            <option value="Beowulf">Beowulf</option>
+                            <option value="Unferth">Unferth</option>
+                            <option value="Grendel's dam">Grendel's dam</option>
+                            <option value="Aeschere">Aeschere</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Wiglaf">Wiglaf</option>
+                        </select>
+                    </td>
+                    <td>Bears the curse of the descendents of Cain.</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <p style="text-align: center; font-family: 'Lato_Bold', system-ui;" id="results"></p>
+        <div class="center"><button id="submit">Submit Quiz</button></div>
+
+        <script>
+            const answersMC = ["C", "D", "A", "C", "D", "B", "C", "B", "A", "B", "D", "D", "A", "A", "D", "A", "B", 
+            "A", "D", "B", "C", "C", "D", "C", "D", "T", "T", "F", "T", "T", "F", "F", "T", "F", 
+            "F", "F", "T", "F", "T", "F", "F", "F", "T", "F", "F", "T", "T", "F"];
+            const numMCQuestions = 48;
+            const numMatching = 11;
+            const answersMatching = ["Unferth", "Hygelac", "Aeschere", "Dragon", "Wiglaf", "Beowulf", "Heorot", "Hrothgar", "Scyld", "Grendel's dam", "Grendel"]
+            const results = document.getElementById("results");
+            const submitBtn = document.getElementById("submit");
+
+            function grade() {
+                let numCorrect = 0;
+                for (let i = 0; i < numMCQuestions; i++) {
+                    let selectedRadio = document.querySelector(`input[name=q${i+1}]:checked`);
+                    if (selectedRadio) {
+                        let value = selectedRadio.id;
+                        console.log(value);
+                        if (value == answersMC[i]) { numCorrect++; correct(i+1); }
+                        else { incorrect(i+1,value,answersMC[i]); }
+                    }
+                }
+                for (let i = 0; i < numMatching; i++) {
+                    let match = document.getElementById(`options${i+1}`).value;
+                    if (match == answersMatching[i]) { numCorrect++; correctMatching(i+1); }
+                    else { incorrectMatching(i+1); }
+                }
+                results.textContent = "Score for this quiz: " + numCorrect + " out of " + (numMCQuestions + numMatching);
+            }
+
+            function correct(num) {
+                const msg = document.getElementById(`${num}`);
+                msg.textContent = "CORRECT";
+                msg.style = "color: green;";
+            }
+
+            function incorrect(num, userA, corrA) {
+                const msg = document.getElementById(`${num}`);
+                msg.textContent = `INCORRECT! CORRECT ANSWER: ${corrA} (YOUR ANSWER: ${userA})`;
+                msg.style = "color: darkred;";
+            }
+
+            function correctMatching(num) {
+                const msg = document.getElementById(`options${num}`);
+                msg.style = "border: 2px solid green;";
+            }
+
+            function incorrectMatching(num) {
+                const msg = document.getElementById(`options${num}`);
+                msg.style = "border: 2px solid darkred;";
+            }
+
+            submitBtn.addEventListener("click", () => {
+                let unanswered = 0;
+                for (let i = 0; i < numMCQuestions; i++) {
+                let selectedRadio = document.querySelector(`input[name=q${i+1}]:checked`);
+                    if (!selectedRadio) {
+                        unanswered++;
+                    }
+                }
+                for (let i = 0; i < numMatching; i++) {
+                    let match = document.getElementById(`options${i+1}`);
+                    if (match.value == "") { unanswered++; }
+                }
+
+                if (unanswered > 0) {
+                    const userConfirm = confirm(`You have ${unanswered} unanswered questions. Are you sure you want to submit?`);
+                    if (userConfirm) {
+                        grade();
+                    }
+                } else {
+                    grade();
+                }
+            });
+        </script>
     </body>
 </html>
